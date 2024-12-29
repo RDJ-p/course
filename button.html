@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Fields and Calendar</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #636e72;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .line-form {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 18%; /* Adjusted to fit 5 items in a row */
+        }
+
+        .form-group label {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #b2bec3;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-bottom: 2px solid #dfe6e9;
+            outline: none;
+            background: transparent;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-bottom: 2px solid #00cec9;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .select-options {
+            display: flex;
+            gap: 10px;
+        }
+
+        .select-options select {
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #dfe6e9;
+            outline: none;
+            background: transparent;
+        }
+
+        .select-options select:focus {
+            border-bottom: 2px solid #00cec9;
+        }
+
+        .buttons-container {
+            display: grid;
+            grid-template-columns: 150px 120px 90px;
+            grid-auto-rows: auto;
+            gap: 10px;
+        }
+
+        .buttons-container button {
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background-color: #00b894;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buttons-container button:hover {
+            background-color: #019c7a;
+        }
+
+        .buttons-container button:nth-child(1),
+        .buttons-container button:nth-child(3) {
+            background-color: #1B1B1B99;
+        }
+
+        .buttons-container button:nth-child(4),
+        .buttons-container button:nth-child(5),
+        .buttons-container button:nth-child(6) {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Line Form</h1>
+        </div>
+
+        <div class="line-form">
+            <div class="form-group">
+                <label for="input1">Label</label>
+                <input type="text" id="input1" placeholder="Placeholder 1">
+            </div>
+            <div class="form-group">
+                <label for="input2">Label</label>
+                <input type="text" id="input2" placeholder="Placeholder 2">
+            </div>
+            <div class="form-group">
+                <label for="input3">Label</label>
+                <input type="text" id="input3" placeholder="Placeholder 3">
+            </div>
+            <div class="form-group">
+                <label for="input4">Label</label>
+                <input type="text" id="input4" placeholder="Placeholder 4">
+            </div>
+            <div class="form-group">
+                <label for="input5">Label</label>
+                <input type="text" id="input5" placeholder="Placeholder 5">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="image-container">
+                <img src="imgg/Datepicker.png" alt="Descriptive Alt Text">
+            </div>
+
+            <div class="select-options">
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+
+            <div class="buttons-container">
+                <button>Option 1</button>
+                <button>Option 2</button>
+                <button>Option 3</button>
+                <button>Option 1</button>
+                <button>Option 2</button>
+                <button>Option 3</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

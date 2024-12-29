@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #d3d3d3;
+        }
+
+        .color-grid {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        /* Colors */
+        .primary { background-color: #00bfa5; }
+        .secondary { background-color: #ffc107; color: #000; }
+        .primary-10 { background-color: #ffc1c1; color: #000; }
+        .primary-40 { background-color: #ff8a8a; }
+        .primary-60 { background-color: #ff5252; }
+        .primary-90 { background-color: #d50000; }
+
+        .black-90 { background-color: #1a1a1a; }
+        .black-60 { background-color: #666; }
+        .black-30 { background-color: #b3b3b3; color: #000; }
+
+        .white-90 { background-color: #f2f2f2; color: #000; }
+        .white-60 { background-color: #ccc; color: #000; }
+        .white-30 { background-color: #999; color: #000; }
+
+        .error { background-color: #ff1744; }
+        .warning { background-color: #aa00ff; }
+        .success { background-color: #1de9b6; }
+    </style>
+</head>
+<body>
+    <h1>Color System</h1>
+
+    <div class="section">
+        <h2>Brand Color</h2>
+        <div class="color-grid">
+            <div class="color-box primary">Primary10</div>
+            <div class="color-box secondary">Secondary</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Color Shades</h2>
+        <div class="color-grid">
+            <div class="color-box primary-10">Primary10</div>
+            <div class="color-box primary-40">Primary40</div>
+            <div class="color-box primary-60">Primary60</div>
+            <div class="color-box primary-90">Primary90</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Object Color</h2>
+        <div class="color-grid">
+            <div class="color-box black-90">Black90</div>
+            <div class="color-box black-60">Black60</div>
+            <div class="color-box black-30">Black30</div>
+            <div class="color-box white-90">White90</div>
+            <div class="color-box white-60">White60</div>
+            <div class="color-box white-30">White30</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Alerts</h2>
+        <div class="color-grid">
+            <div class="color-box error">Error</div>
+            <div class="color-box warning">Warning</div>
+            <div class="color-box success">Success</div>
+        </div>
+    </div>
+</body>
+</html>
